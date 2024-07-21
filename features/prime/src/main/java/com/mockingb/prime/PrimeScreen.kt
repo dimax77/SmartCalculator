@@ -19,6 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.mockingb.logger.AppLogger
 
 
 @Composable
@@ -54,7 +55,10 @@ fun PrimeScreen(viewmodel: PrimeViewModel = PrimeViewModel()) {
             })
             Text(text = "Set lower order")
         }
-        Button(onClick = { result = viewmodel.processNumber(number, reverseFlag) }) {
+        Button(onClick = {
+            AppLogger.log("\'Check number\' button pressed")
+            result = viewmodel.processNumber(number, reverseFlag)
+        }) {
             Text(text = "Check number")
         }
         result?.let { result ->

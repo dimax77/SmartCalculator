@@ -18,6 +18,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.mockingb.logger.AppLogger
 
 
 fun isValidDouble(number: String): Boolean {
@@ -87,7 +88,8 @@ fun ThermometerScreen(viewModel: ThermometerViewModel = ThermometerViewModel()) 
         }
         Button(onClick = {
             if (isValidDouble(number))
-                result = viewModel.processInput(number.toDouble(), season, scaleType)
+                result = viewModel.processInput(number.toDouble(), season, scaleType) else
+                AppLogger.log("Wrong input")
         }) {
             Text(text = "Process input")
         }

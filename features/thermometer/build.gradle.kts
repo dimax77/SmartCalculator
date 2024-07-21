@@ -46,6 +46,7 @@ dependencies {
     implementation(libs.androidx.foundation.layout.android)
     implementation(libs.androidx.material3.android)
     implementation(libs.androidx.ui.tooling.preview.android)
+    implementation(project(":core:logger"))
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

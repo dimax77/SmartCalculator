@@ -24,6 +24,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.mockingb.logger.AppLogger
 
 
 @Composable
@@ -58,6 +59,7 @@ fun CircleScreen(circleViewModel: CircleViewModel = CircleViewModel()) {
         Spacer(modifier = Modifier.height(16.dp))
 
         Button(onClick = {
+            AppLogger.log("\"Check circles\" Button pressed")
             result = circleViewModel.checkCircles(
                 x1.toDoubleOrNull(),
                 y1.toDoubleOrNull(),
