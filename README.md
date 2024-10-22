@@ -57,5 +57,7 @@ Android Jetpack Components для управления состоянием и �
 Требования
 Android SDK 21+
 Поддержка API версии 5.0 (Lollipop) и выше.
-Лицензия
-Этот проект лицензирован под лицензией MIT
+
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
