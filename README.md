@@ -1,4 +1,4 @@
-Smart Calculator
+ Smart Calculator
 Smart Calculator — это приложение, которое помогает выполнять три уникальные задачи:
 
 ## Главный экран
@@ -42,7 +42,7 @@ git clone https://github.com/dimax77/SmartCalculator.git
 Перейдите в директорию проекта:
 
 
-cd smartcalculator
+cd SmartCalculator
 Соберите и запустите проект:
 
 Для Android:
