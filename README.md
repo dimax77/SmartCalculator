@@ -42,7 +42,7 @@ git clone https://github.com/dimax77/SmartCalculator.git
 Перейдите в директорию проекта:
 
 
-cd smart-calculator
+cd smartcalculator
 Соберите и запустите проект:
 
 Для Android:
